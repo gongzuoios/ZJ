@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ZJViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,11 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    ZJViewController*zjVC=[[ZJViewController alloc] initWithNibName:@"ZJViewController" bundle:nil];
+    
+    self.window.rootViewController=zjVC;
+    
     return YES;
 }
 

@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184E6C4F1C1AB70B0020B690 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 184E6C4E1C1AB70B0020B690 /* 1.jpg */; };
 		18E3A00D1C1AAE6C00146202 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3A00C1C1AAE6C00146202 /* main.m */; };
 		18E3A0101C1AAE6C00146202 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3A00F1C1AAE6C00146202 /* AppDelegate.m */; };
 		18E3A0121C1AAE6C00146202 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E3A0111C1AAE6C00146202 /* Assets.xcassets */; };
 		18E3A0151C1AAE6C00146202 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E3A0131C1AAE6C00146202 /* LaunchScreen.storyboard */; };
 		18E3A0201C1AAE6C00146202 /* ZJPaintTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3A01F1C1AAE6C00146202 /* ZJPaintTests.m */; };
 		18E3A02B1C1AAE6C00146202 /* ZJPaintUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3A02A1C1AAE6C00146202 /* ZJPaintUITests.m */; };
+		18E3A03B1C1AAE9B00146202 /* ZJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3A0391C1AAE9B00146202 /* ZJViewController.m */; };
+		18E3A03C1C1AAE9B00146202 /* ZJViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E3A03A1C1AAE9B00146202 /* ZJViewController.xib */; };
+		18E3A03F1C1AAECB00146202 /* ZJLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3A03E1C1AAECB00146202 /* ZJLine.m */; };
+		18E3A0421C1AAEEA00146202 /* ZJTouchPaint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3A0411C1AAEEA00146202 /* ZJTouchPaint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		184E6C4E1C1AB70B0020B690 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		18E3A0081C1AAE6C00146202 /* ZJPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E3A00C1C1AAE6C00146202 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18E3A00E1C1AAE6C00146202 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -46,6 +52,13 @@
 		18E3A0261C1AAE6C00146202 /* ZJPaintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJPaintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E3A02A1C1AAE6C00146202 /* ZJPaintUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJPaintUITests.m; sourceTree = "<group>"; };
 		18E3A02C1C1AAE6C00146202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E3A0381C1AAE9B00146202 /* ZJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJViewController.h; sourceTree = "<group>"; };
+		18E3A0391C1AAE9B00146202 /* ZJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJViewController.m; sourceTree = "<group>"; };
+		18E3A03A1C1AAE9B00146202 /* ZJViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJViewController.xib; sourceTree = "<group>"; };
+		18E3A03D1C1AAECB00146202 /* ZJLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLine.h; sourceTree = "<group>"; };
+		18E3A03E1C1AAECB00146202 /* ZJLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLine.m; sourceTree = "<group>"; };
+		18E3A0401C1AAEEA00146202 /* ZJTouchPaint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJTouchPaint.h; sourceTree = "<group>"; };
+		18E3A0411C1AAEEA00146202 /* ZJTouchPaint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJTouchPaint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +111,13 @@
 			children = (
 				18E3A00E1C1AAE6C00146202 /* AppDelegate.h */,
 				18E3A00F1C1AAE6C00146202 /* AppDelegate.m */,
+				18E3A0381C1AAE9B00146202 /* ZJViewController.h */,
+				18E3A0391C1AAE9B00146202 /* ZJViewController.m */,
+				18E3A03A1C1AAE9B00146202 /* ZJViewController.xib */,
+				18E3A03D1C1AAECB00146202 /* ZJLine.h */,
+				18E3A03E1C1AAECB00146202 /* ZJLine.m */,
+				18E3A0401C1AAEEA00146202 /* ZJTouchPaint.h */,
+				18E3A0411C1AAEEA00146202 /* ZJTouchPaint.m */,
 				18E3A0111C1AAE6C00146202 /* Assets.xcassets */,
 				18E3A0131C1AAE6C00146202 /* LaunchScreen.storyboard */,
 				18E3A0161C1AAE6C00146202 /* Info.plist */,
@@ -109,6 +129,7 @@
 		18E3A00B1C1AAE6C00146202 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				184E6C4E1C1AB70B0020B690 /* 1.jpg */,
 				18E3A00C1C1AAE6C00146202 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -194,6 +215,7 @@
 		18E3A0001C1AAE6C00146202 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZJ;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = apple;
 				TargetAttributes = {
@@ -239,7 +261,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				18E3A0121C1AAE6C00146202 /* Assets.xcassets in Resources */,
+				184E6C4F1C1AB70B0020B690 /* 1.jpg in Resources */,
 				18E3A0151C1AAE6C00146202 /* LaunchScreen.storyboard in Resources */,
+				18E3A03C1C1AAE9B00146202 /* ZJViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,8 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E3A03B1C1AAE9B00146202 /* ZJViewController.m in Sources */,
+				18E3A0421C1AAEEA00146202 /* ZJTouchPaint.m in Sources */,
 				18E3A0101C1AAE6C00146202 /* AppDelegate.m in Sources */,
 				18E3A00D1C1AAE6C00146202 /* main.m in Sources */,
+				18E3A03F1C1AAECB00146202 /* ZJLine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +510,7 @@
 				18E3A0311C1AAE6C00146202 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18E3A0321C1AAE6C00146202 /* Build configuration list for PBXNativeTarget "ZJPaintTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +519,7 @@
 				18E3A0341C1AAE6C00146202 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18E3A0351C1AAE6C00146202 /* Build configuration list for PBXNativeTarget "ZJPaintUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +528,7 @@
 				18E3A0371C1AAE6C00146202 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
