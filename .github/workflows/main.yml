@@ -1,25 +1,8 @@
-name: Build and Push to Aliyun ACR
-on:
-  push:
-    branches: [ main ]
-jobs:
-  build-and-push:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Login to Aliyun ACR
-        uses: docker/login-action@v2
-        with:
-          registry: ${{ secrets.ALIYUN_REGISTRY }}
-          username: ${{ secrets.ALIYUN_REGISTRY_USER }}
-          password: ${{ secrets.ALIYUN_REGISTRY_PASSWORD }}
-
-      - name: Build and Push Docker Image
-        uses: docker/build-push-action@v5
-        with:
-          context: .
-          push: true
-          tags: |
-            ${{ secrets.ALIYUN_REGISTRY }}/${{ secrets.ALIYUN_NAME_SPACE }}/your-image-name:latest
+- name: 同步镜像到ACR
+  run: |
+    while read -r line; do
+      docker pull $line
+      image_name=$(echo $line | awk '{print $1}')
+      docker tag $image_name ${{ secrets.ALIYUN_REGISTRY }}/${{ secrets.ALIYUN_NAME_SPACE }}/$(echo $image_name | tr '/' '-')
+      docker push ${{ secrets.ALIYUN_REGISTRY }}/${{ secrets.ALIYUN_NAME_SPACE }}/$(echo $image_name | tr '/' '-')
+    done < image-sync-list.txt
